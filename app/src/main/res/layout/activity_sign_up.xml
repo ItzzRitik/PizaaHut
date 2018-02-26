@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aditya.ritik.dbms_project.signUp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:srcCompat="@mipmap/logo"
+            android:id="@+id/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Your Pizza Hut Account"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:id="@+id/signtext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:layout_marginBottom="80dp"
+            android:layout_below="@id/logo"/>
+        <View
+            android:layout_height="0.1dp"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_below="@+id/signtext"
+            android:layout_marginTop="-78dp"
+            android:layout_gravity="center"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="-20dp"
+            android:backgroundTint="#ffffff"
+            android:hint="Enter Your Email"
+            android:textColorHint="#606060"
+            android:textColor="#ffffff"
+            android:paddingStart="10dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:background="@drawable/textfield"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/signtext"
+            android:id="@+id/id" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="#606060"
+            android:backgroundTint="#ffffff"
+            android:textColor="#ffffff"
+            android:textCursorDrawable="@drawable/cursor"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/textfield"
+            android:layout_below="@id/id"
+            android:id="@+id/pass"
+            android:fontFamily="sans-serif"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:textColorHint="#606060"
+            android:backgroundTint="#ffffff"
+            android:textColor="#ffffff"
+            android:textCursorDrawable="@drawable/cursor"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/textfield"
+            android:layout_below="@id/pass"
+            android:id="@+id/pass_con"
+            android:fontFamily="sans-serif"/>
+        <Button
+            android:text="Create Account"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_pressed"
+            android:layout_below="@id/pass_con"
+            android:layout_marginTop="50dp"
+            android:textColor="#ffffff"
+            android:id="@+id/signIN" />
+    </RelativeLayout>
+</RelativeLayout>

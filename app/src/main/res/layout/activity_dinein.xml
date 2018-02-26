@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="aditya.ritik.dbms_project.menu">
+    <RelativeLayout
+        android:id="@+id/selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="100dp"
+        android:background="@mipmap/background"
+        android:fitsSystemWindows="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/logo"
+            android:layout_marginTop="31dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_transparent"
+            android:layout_above="@+id/name"
+            android:layout_marginBottom="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter time of your visit"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:id="@+id/textView4"
+            android:layout_above="@+id/timepicker"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:hint="ENTER NAME"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/button_transparent"
+            android:layout_marginBottom="87dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/timepicker"
+            android:background="@drawable/button_selector"
+            android:textColor="@color/white"
+            android:text="Choose time"
+            android:onClick="timepicker"
+            android:layout_alignBaseline="@+id/time"
+            android:layout_alignBottom="@+id/time"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="19dp" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/datepicker"
+            android:background="@drawable/button_selector"
+            android:text="Choose date"
+            android:textColor="@color/white"
+            android:onClick="datepicker"
+            android:layout_above="@+id/textView4"
+            android:layout_alignStart="@+id/timepicker" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:text="Enter date of your visit"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ENTER EMAIL ID"
+            android:id="@+id/email"
+            android:background="@drawable/button_transparent"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginBottom="33dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_transparent"
+            android:layout_alignBaseline="@+id/datepicker"
+            android:layout_alignBottom="@+id/datepicker"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:fitsSystemWindows="true"
+        android:layout_marginBottom="50dp"
+        android:background="#0000"
+        android:id="@+id/seat">
+        <include layout="@layout/seat" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="#0000">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/left_arrow_image"
+            android:padding="10dp"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/prev"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/right_arrow_image"
+            android:layout_alignParentRight="true"
+            android:id="@+id/next"/>
+    </RelativeLayout>
+
+</RelativeLayout>

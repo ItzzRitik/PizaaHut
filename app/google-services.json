@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "871983984982",
+    "project_id": "dbmsproject-157208"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871983984982:android:81cd2be4c62f2b2a",
+        "android_client_info": {
+          "package_name": "aditya.ritik.dbms_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871983984982-mqe6jdjbifqmoc8t6li2h8adiblt4tol.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "aditya.ritik.dbms_project",
+            "certificate_hash": "2DA44BD7F10CCF644E447B0FDC6DE3BEAF2187E7"
+          }
+        },
+        {
+          "client_id": "871983984982-q6ccfu2322cul37k5fgkkt77p4h5ncj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBusJXWetdQ6nHlb-3mww3paA2qeI-Mpac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

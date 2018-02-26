@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aditya.ritik.dbms_project.user_desk">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:srcCompat="@mipmap/logo"
+            android:id="@+id/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enjoy Our Pizza in Three Ways"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:id="@+id/signtext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:layout_marginBottom="80dp"
+            android:layout_below="@id/logo"/>
+        <View
+            android:layout_height="0.1dp"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_below="@+id/signtext"
+            android:layout_marginTop="-78dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:text="Dine IN"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_pressed"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffffff"
+            android:id="@+id/dine" />
+        <Button
+            android:text="Take Away"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_pressed"
+            android:layout_below="@id/dine"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:id="@+id/homeDel" />
+        <Button
+            android:text="Home Delivery"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_pressed"
+            android:layout_below="@id/homeDel"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:id="@+id/take" />
+    </RelativeLayout>
+</RelativeLayout>
