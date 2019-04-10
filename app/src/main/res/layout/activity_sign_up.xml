@@ -16,6 +16,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#64000000"></RelativeLayout>
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginLeft="20dp"
@@ -57,7 +61,7 @@
             android:layout_marginTop="-20dp"
             android:backgroundTint="#ffffff"
             android:hint="Enter Your Email"
-            android:textColorHint="#606060"
+            android:textColorHint="#ffffff"
             android:textColor="#ffffff"
             android:paddingStart="10dp"
             android:textCursorDrawable="@drawable/cursor"
@@ -70,7 +74,7 @@
             android:layout_height="40dp"
             android:inputType="textPassword"
             android:hint="Password"
-            android:textColorHint="#606060"
+            android:textColorHint="#ffffff"
             android:backgroundTint="#ffffff"
             android:textColor="#ffffff"
             android:textCursorDrawable="@drawable/cursor"
@@ -85,7 +89,7 @@
             android:layout_height="40dp"
             android:inputType="textPassword"
             android:hint="Confirm Password"
-            android:textColorHint="#606060"
+            android:textColorHint="#ffffff"
             android:backgroundTint="#ffffff"
             android:textColor="#ffffff"
             android:textCursorDrawable="@drawable/cursor"

@@ -18,6 +18,7 @@
         android:layout_marginBottom="100dp"
         android:background="@mipmap/background"
         android:fitsSystemWindows="true">
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -106,6 +107,10 @@
             android:layout_alignBottom="@+id/datepicker"
             android:layout_alignParentStart="true" />
     </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#64000000"></RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
